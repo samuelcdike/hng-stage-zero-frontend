@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <article data-testid="test-profile-card">
+        <div class="card-header">
+            <figure data-testid="test-user-avatar">
+                <img data-testid="test-user-avatar"
+                    src="./images/Sam.jpg"
+                    alt="Profile picture of Samuel C Dike" width="120" height="120">
+            </figure>
+            <div class="header-content">
+                <h2 data-testid="test-user-name">Samuel C Dike</h2>
+                <p data-testid="test-user-bio">
+                    Software Engineer passionate about building accessible, performant web experiences and software. I love
+                    working with modern JavaScript frameworks and creating intuitive user interfaces.
+                </p>
+                <div class="time-display">
+                    <span data-testid="test-user-time" id="current-time">0</span> ms
+                </div>
+            </div>
+        </div>
+
+        <section class="card-section">
+            <h3 class="section-title">Social Links</h3>
+            <nav data-testid="test-user-social-links">
+                <a data-testid="test-user-social-twitter" href="https://twitter.com/samuelcdike" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visit Twitter profile">
+                    𝕏
+                </a>
+                <a data-testid="test-user-social-github" href="https://github.com/samuelcdike" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visit GitHub profile">
+                    GH
+                </a>
+                <a data-testid="test-user-social-linkedin" href="https://linkedin.com/in/samuel-c-dike" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                    in
+                </a>
+                <a data-testid="test-user-social-instagram" href="https://instagram.com/samuelcdike" target="_blank"
+                    rel="noopener noreferrer" aria-label="Visit Instagram profile">
+                    IG
+                </a>
+            </nav>
+        </section>
+
+        <section class="card-section">
+            <h3 class="section-title">Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+                <li>Coding</li>
+                <li>Watch football</li>
+                <li>Reading</li>
+                <li>Gaming</li>
+            </ul>
+        </section>
+
+        <section class="card-section">
+            <h3 class="section-title">Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+                <li>Bugs</li>
+                <li>Slow Networks</li>
+                <li>Terrible Design</li>
+                <li>Poor Documentation</li>
+            </ul>
+        </section>
+
+    </article>
+<script src="./script.js"></script>
+</body>
+
+</html>
