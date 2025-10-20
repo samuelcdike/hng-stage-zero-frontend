@@ -1,44 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me | Samuel C Dike</title>
-  <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Samuel C Dike</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <main data-testid="test-about-page" class="page-container">
-    <h1>About Me</h1>
+    <article data-testid="test-profile-card">
 
-    <section data-testid="test-about-bio">
-      <h2>Bio</h2>
-      <p>I’m Samuel C Dike, a software engineer passionate about building accessible, performant web experiences.</p>
-    </section>
+        <nav style="text-align:center; margin-top: 1rem;">
+            <a href="./index.html">Home</a> |
+            <a href="./about.html">About</a> |
+            <a href="./contact.html">Contact</a>
+        </nav>
 
-    <section data-testid="test-about-goals">
-      <h2>Goals in this Program</h2>
-      <ul>
-        <li>Master semantic HTML, accessibility and responsive design.</li>
-        <li>Strengthen JavaScript and React skills.</li>
-        <li>Collaborate effectively in team projects.</li>
-      </ul>
-    </section>
+        <main data-testid="test-about-page" class="card-content">
+            <h1 style="text-align:center; margin-bottom: 1.5rem;">About Me</h1>
 
-    <section data-testid="test-about-confidence">
-      <h2>Areas of Low Confidence</h2>
-      <p>Debugging advanced JS logic and optimizing app performance — I’m steadily improving through practice.</p>
-    </section>
+            <section data-testid="test-about-bio" class="card-section">
+                <h2 class="section-title">Bio</h2>
+                <p>I’m Samuel C Dike, a software engineer passionate about building accessible, performant web
+                    experiences.</p>
+            </section>
 
-    <section data-testid="test-about-future-note">
-      <h2>Note to Future Self</h2>
-      <p>Keep learning, stay consistent, and celebrate each small win. Persistence pays off.</p>
-    </section>
+            <section data-testid="test-about-goals" class="card-section">
+                <h2 class="section-title">Goals in this Program</h2>
+                <ul>
+                    <li>Master semantic HTML and accessibility.</li>
+                    <li>Deepen my JavaScript and React skills.</li>
+                    <li>Build professional, responsive web apps.</li>
+                </ul>
+            </section>
 
-    <section data-testid="test-about-extra">
-      <h2>Extra Thoughts</h2>
-      <p>This journey has been both challenging and inspiring; I’m grateful for the mentorship and community support.</p>
-    </section>
-  </main>
+            <section data-testid="test-about-confidence" class="card-section">
+                <h2 class="section-title">Areas of Low Confidence</h2>
+                <p>I’m still growing in optimizing JS performance and complex state management—but improving daily.</p>
+            </section>
+
+            <section data-testid="test-about-future-note" class="card-section">
+                <h2 class="section-title">Note to Future Self</h2>
+                <p>Keep learning, stay consistent, and never underestimate how far you’ve come.</p>
+            </section>
+
+            <section data-testid="test-about-extra" class="card-section">
+                <h2 class="section-title">Extra Thoughts</h2>
+                <p>This program has boosted my confidence, discipline, and creativity as a developer.</p>
+            </section>
+        </main>
+    </article>
 </body>
+
 </html>

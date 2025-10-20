@@ -216,3 +216,21 @@ button {
   margin-top: 1rem;
   text-align: center;
 }
+
+nav {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  color: #2d3748;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #0078d4;
+  outline: none;
+}
