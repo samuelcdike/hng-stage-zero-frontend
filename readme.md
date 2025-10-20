@@ -1,35 +1,45 @@
-# Profile Card - HNG Internship Task
+# HNG Internship – Stage 1 Task
 
-A small, accessible, and responsive profile card built with semantic HTML, modern CSS, and vanilla JS.
+## 🧩 Overview
+This project builds on my Stage 0 task to create a **multi-page web application** using semantic HTML, accessible forms, and responsive design principles.
 
-## 🧩 Features
-- Semantic HTML5 structure
-- Accessible (keyboard navigable, alt text, focus styles)
-- Responsive (mobile, tablet, desktop)
-- Dynamic time display in milliseconds using `Date.now()`
-- Social links open safely in new tab (`target="_blank"` with `rel="noopener noreferrer"`)
+The app now consists of:
+- 🏠 **Profile Page (index.html)** — a personal profile card showcasing my details, social links, hobbies, and dislikes.
+- ✉️ **Contact Us Page (contact.html)** — a form with full client-side validation (name, email, subject, message).
+- 👤 **About Me Page (about.html)** — a reflective section with bio, goals, areas of low confidence, and a note to my future self.
 
-## 🧠 Data Test IDs
-All visible elements include the required `data-testid` attributes for automated testing:
-- `test-profile-card`
-- `test-user-name`
-- `test-user-bio`
-- `test-user-time`
-- `test-user-avatar`
-- `test-user-social-links`
-- `test-user-hobbies`
-- `test-user-dislikes`
+All pages share a **modern, accessible design**, a **unified style system**, and a **dynamic navigation bar** for consistent layout.
 
-## 🚀 Live Demo
-👉 [Live on Netlify](https://your-netlify-link.netlify.app)
+---
 
-## 🧰 Technologies Used
+## ⚙️ Features
+- Semantic HTML elements (`main`, `section`, `nav`, `article`)
+- Form validation with meaningful error messages
+- Fully responsive layout across mobile, tablet, and desktop
+- Accessibility compliance (labels, ARIA, alt text, keyboard navigation)
+- Reusable navigation bar (`nav.js`) dynamically injected into all pages
+- Consistent styling via a shared `style.css`
+
+---
+
+## 🧠 Tools & Technologies
 - HTML5
-- CSS3 (Flexbox + Responsive Design)
-- Vanilla JavaScript (Date.now())
+- CSS3 (Flexbox & media queries)
+- JavaScript (DOM manipulation & validation)
+- Git & GitHub
+- Netlify (for deployment)
 
-## 🛠️ How to Run Locally
-```bash
-git clone https://github.com/yourusername/hng-profile-card.git
-cd hng-profile-card
-open index.html
+---
+
+## 🌐 Live Demo
+🔗 **[https://hngstagezerosamuelcdike.netlify.app](https://hngstagezerosamuelcdike.netlify.app)**
+
+- Home → `/index.html`
+- About → `/about.html`
+- Contact → `/contact.html`
+
+---
+
+## 👨🏽‍💻 Author
+**Samuel C. Dike**  
+Software Engineer passionate about accessible, performant web experiences.
