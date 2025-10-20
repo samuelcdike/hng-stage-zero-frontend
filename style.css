@@ -234,3 +234,10 @@ nav a:focus {
   color: #0078d4;
   outline: none;
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
