@@ -99,9 +99,10 @@ nav[data-testid="test-user-social-links"] {
 }
 
 a[data-testid^="test-user-social-"] {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  text-align: left;
   width: 40px;
   height: 40px;
   border-radius: 50%;
