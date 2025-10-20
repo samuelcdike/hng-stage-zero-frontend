@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card</title>
+    <title>Samuel C Dike | Profile Card</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <article data-testid="test-profile-card">
-
-        <nav style="text-align:center; margin-top: 1rem;">
-            <a href="./index.html">Home</a> |
-            <a href="./about.html">About</a> |
-            <a href="./contact.html">Contact</a>
+    <header class="navbar">
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <span>|</span>
+            <a href="about.html">About</a>
+            <span>|</span>
+            <a href="contact.html">Contact</a>
         </nav>
+    </header>
+
+    <article data-testid="test-profile-card">
 
         <div class="card-header">
             <figure data-testid="test-user-avatar">
@@ -80,13 +86,18 @@
     </article>
     <script src="./script.js"></script>
     <script>
-        // Highlight active nav link
-        const links = document.querySelectorAll('nav a');
-        const current = window.location.pathname.split('/').pop(); // e.g. 'about.html'
+        // Highlight active nav link (improved)
+        const links = document.querySelectorAll('article > nav a'); // only top nav links
+        const path = window.location.pathname || '';
+        let current = path.substring(path.lastIndexOf('/') + 1) || 'index.html';
+        current = current.split(/[?#]/)[0].replace(/^\.\//, ''); // remove query/hash and "./" prefix
 
         links.forEach(link => {
-            if (link.getAttribute('href') === current || (current === '' && link.getAttribute('href') === 'index.html')) {
+            const href = (link.getAttribute('href') || '').split(/[?#]/)[0].replace(/^\.\//, '');
+            if (href === current) {
                 link.classList.add('active');
+            } else {
+                link.classList.remove('active');
             }
         });
     </script>
