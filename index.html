@@ -79,6 +79,17 @@
 
     </article>
     <script src="./script.js"></script>
+    <script>
+        // Highlight active nav link
+        const links = document.querySelectorAll('nav a');
+        const current = window.location.pathname.split('/').pop(); // e.g. 'about.html'
+
+        links.forEach(link => {
+            if (link.getAttribute('href') === current || (current === '' && link.getAttribute('href') === 'index.html')) {
+                link.classList.add('active');
+            }
+        });
+    </script>
 </body>
 
 </html>
