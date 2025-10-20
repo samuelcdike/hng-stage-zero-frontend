@@ -218,21 +218,24 @@ button {
 }
 
 nav {
-  margin-bottom: 1rem;
+  text-align: center;        
+  margin: 20px 0;            
 }
 
 nav a {
-  color: #2d3748;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: 500;
-  transition: color 0.2s ease;
+  text-decoration: none;     
+  color: #333;               
+  margin: 0 10px;            
+  font-weight: 500;          
 }
 
-nav a:hover,
-nav a:focus {
-  color: #0078d4;
-  outline: none;
+nav a.active {
+  color: #007bff;           
+}
+
+nav span {
+  color: #999;              
+  margin: 0 5px;
 }
 
 nav {
